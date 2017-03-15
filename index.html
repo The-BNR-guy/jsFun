@@ -27,7 +27,7 @@ JavaScript can create new HTML events in the page -->
 <!DOCTYPE html>
 <html>
 <body>
-	<h1>*Fun With JavaScript*</h1>
+	<h1>Fun with Javascript</h1>
 
 	<h2>With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</h2>
 
@@ -57,7 +57,7 @@ JavaScript can create new HTML events in the page -->
   <br>
   <br>
 	<!-- Why should we only use document.write for testing? Using document.write() after an HTML document is fully loaded will delete all existing HTML!-->
-	<button onclick="document.write(5 + 6)">Push me to delete everything but the number eleven</button>
+	<button onclick="document.write('Ian')">Push me to delete everything but my name and my age.</button>
 
 	<!-- OH NOES! Better reload the browser! But First:-->
 
@@ -74,7 +74,8 @@ JavaScript can create new HTML events in the page -->
 
 	<!--***HINT: Did you notice how I needed to type in an extra space at the end of my sentence (also known as 'string') so that the numeral wouldn't smush into it when we print to console?-->
 	<script>
-		console.log('Hi! I am here in your console with the number eleven! ' + (5 + 6));
+        var Yourname ="Ian"
+		console.log('Hi from the concole! This is '+Yourname + (5 + 6));
 	</script>
 
 <!-- TO DO: Print 'Hi from the console! This is ' + YOURNAME displayed in your browser console. Take a screenshot (press command + shift + 3), rename the image to console.png, put it in this (jsFun) folder, and push back up to your branch on GitHub-->
@@ -96,7 +97,12 @@ JavaScript can create new HTML events in the page -->
 	***HINT: Remember, Javascript can only parse words when they are in 'string' format!!!***-->
 
 	<!-- YOUR CODE GOES HERE!  -->
-
+	<p id='Hello'>
+    </p>
+	<!-- The innerHTML property defines the of that HTML element.  Here, we're setting it equal to 8 -->
+	<script>
+		document.getElementById('Hello').innerHTML = 'My name is'+ ' Ian my birthday is July 20, my age is :' +(9 + 7);
+	</script>
 
 
 	<!-- BACK TO THE ASSIGNMENT!  -->
